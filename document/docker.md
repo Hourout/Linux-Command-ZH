@@ -10,7 +10,12 @@ docker version
 
 | 命令 | 说明 |
 |--- |--- |
+| docker login -u 用户名 -p 密码 | 登陆到Docker Hub |
+| docker logout | 登出Docker Hub |
 | docker pull 镜像名 | 拉取镜像 |
+| docker pull -a 镜像名 | 拉取镜像名所有镜像 |
+| docker push name:v1 | 上传本地镜像name:v1到镜像仓库中 |
+| docker search java | 从Docker Hub查找java镜像 |
 | docker images | 查看镜像列表 |
 | docker image rm 镜像名或镜像id | 删除镜像 |
 | docker save -o 保存的文件路径以及文件名 镜像名 | 镜像备份 |
